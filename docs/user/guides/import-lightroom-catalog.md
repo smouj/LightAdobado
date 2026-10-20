@@ -2,7 +2,6 @@
 title: Move over from Lightroom
 description: Import a Lightroom Classic catalog into LightAdobado, and learn what comes across and what does not.
 order: 50
-verified: 0.7.1
 ---
 
 Choose **File** > **Import Lightroom Catalog…** and pick your `.lrcat` file. LightAdobado reads it directly. You do not need Lightroom installed.

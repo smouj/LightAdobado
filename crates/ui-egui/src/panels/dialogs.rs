@@ -1290,15 +1290,15 @@ pub fn show(app: &mut LightcraftApp, ctx: &egui::Context) {
                                 crate::theme::font_credits(app.chinese_font.is_some())
                             ));
                             ui.add_space(10.0);
-                            let r = crate::button::Button::new("Join the Adobado Kit Discord")
+                            let r = crate::button::Button::new("Get help and report an issue")
                                 .primary()
                                 .large()
                                 .min_width(260.0)
                                 .widget("button:aboutDiscord")
-                                .tooltip(crate::links::DISCORD)
+                                .tooltip(crate::links::SUPPORT)
                                 .show(ui);
                             if r.clicked() {
-                                let _ = crate::links::open(app, crate::links::DISCORD);
+                                let _ = crate::links::open(app, crate::links::SUPPORT);
                             }
                             ui.add_space(6.0);
                             for (label, url) in [

@@ -1,12 +1,14 @@
-//! Community and project links (Help menu, About dialog, top-bar Discord button).
+//! Support and project links (Help menu, About dialog and top-bar links).
 
-/// The app's id in Adobado Kit URLs.
-pub const APP: &str = "lightcraft";
-/// The Adobado Kit community Discord.
-pub const DISCORD: &str = "https://github.com/smouj/Adobado_Kit";
+/// This app's public repository name.
+pub const APP: &str = "LightAdobado";
+/// The app's issue tracker for help and bug reports.
+pub const SUPPORT: &str = "https://github.com/smouj/LightAdobado/issues";
+/// Compatibility alias for the former community-link constant.
+pub const DISCORD: &str = SUPPORT;
 /// The Adobado Kit website.
-pub const WEBSITE: &str = "https://github.com/smouj/Adobado_Kit";
-/// This app's page on the Adobado Kit website.
+pub const WEBSITE: &str = "https://smouj.github.io/Adobado_Kit/";
+/// This app's project page.
 pub const APP_PAGE: &str = "https://github.com/smouj/LightAdobado";
 /// This app's source repository.
 pub const GITHUB: &str = "https://github.com/smouj/LightAdobado";
@@ -17,8 +19,8 @@ pub const HELP: &str = "https://github.com/smouj/LightAdobado/tree/main/docs";
 
 pub const LINKS: &[(&str, &str, &str)] = &[
     ("app.help", "LightAdobado Help", HELP),
-    ("app.discord", "Join the Adobado Kit Discord…", DISCORD),
-    ("app.website", "LightAdobado Website", APP_PAGE),
+    ("app.discord", "Get help and report an issue…", SUPPORT),
+    ("app.website", "LightAdobado Project Page", APP_PAGE),
     ("app.github", "LightAdobado on GitHub", GITHUB),
     ("app.artcraft", "Adobado Kit Website", WEBSITE),
     ("app.feedback", "Send Feedback…", FEEDBACK),
@@ -50,7 +52,7 @@ mod tests {
             assert!(!label.is_empty());
             assert_eq!(url_of(id), Some(*url));
         }
-        assert!(APP_PAGE.ends_with(&format!("/apps/{APP}")));
-        assert!(GITHUB.ends_with(&format!("/storytold/{APP}")));
+        assert_eq!(APP_PAGE, GITHUB);
+        assert!(GITHUB.ends_with(&format!("/smouj/{APP}")));
     }
 }

@@ -247,7 +247,7 @@ pub const UI_COMMANDS: &[UiCommand] = &[
     ("app.whatsNew", "What's New", None, "Help"),
     ("dialog.cull", "Assisted Culling…", None, "Photo"),
     ("app.help", "LightAdobado Help", Some("F1"), "Help"),
-    ("app.discord", "Join the Adobado Kit Discord…", None, "Help"),
+    ("app.discord", "Get help and report an issue…", None, "Help"),
     ("app.feedback", "Send Feedback…", None, "Help"),
     ("app.website", "LightAdobado Website", None, "Help"),
     ("app.github", "LightAdobado on GitHub", None, "Help"),

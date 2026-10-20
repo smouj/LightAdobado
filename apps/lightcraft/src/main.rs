@@ -1323,7 +1323,10 @@ mod tests {
         assert_eq!(stopped_text("its window stopped drawing", None), "its window stopped drawing");
         let (title, body) = lightcraft_ui_egui::i18n::stopped_message(&text, Some("/logs/lightcraft.log"));
         assert_eq!(title, "LightAdobado stopped");
-        assert!(body.starts_with("LightAdobado stopped unexpectedly: its window stopped drawing") && body.ends_with("/logs/lightcraft.log"), "{body}");
+        assert!(
+            body.starts_with("LightAdobado stopped unexpectedly: its window stopped drawing") && body.ends_with("/logs/lightcraft.log"),
+            "{body}"
+        );
         let _ = std::fs::remove_dir_all(&d);
     }
 

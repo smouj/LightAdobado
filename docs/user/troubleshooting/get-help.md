@@ -2,10 +2,9 @@
 title: Get help with a problem
 description: What to include when you ask for help with a LightAdobado bug, and where to post it.
 order: 30
-verified: 0.7.1
 ---
 
-Open an issue in the [issue tracker](https://github.com/smouj/LightAdobado/issues), or ask in [Discord](https://github.com/smouj/Adobado_Kit). Include your version, your system, what you did, and what you expected.
+Open an issue in the [LightAdobado issue tracker](https://github.com/smouj/LightAdobado/issues). Include your app version, system, steps, and expected result. Current Adobado builds are still being validated; report the exact commit or package you used.
 
 ## What to include
 
@@ -23,4 +22,4 @@ LightAdobado writes its log to `logs/lightcraft.log` in its settings folder. On 
 
 ## Still stuck?
 
-Ask in [Discord](https://github.com/smouj/Adobado_Kit).
+If you need more help, add a comment to the same issue so the details stay together.
