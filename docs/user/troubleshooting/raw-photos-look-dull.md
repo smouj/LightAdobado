@@ -1,11 +1,14 @@
 ---
 title: Raw photos look dull or washed out
-description: What to do when a raw photo looks flat, grey or desaturated in LightAdobado compared with the camera JPEG.
+description: Checks for flat RAW colour in the upstream LightCraft workflow; current LightAdobado behavior is still being validated.
 order: 20
-verified: 0.7.1
 ---
 
-Update to the latest LightAdobado, then select the photo and choose **Photo** > **Reload from Disk**. Colour handling for raw files changed a lot between 0.4.0 and 0.7.1, and several flat-looking Sony and Fujifilm cases are fixed. Some Leica DNGs and dark, muted scenes still look dull.
+> **Upstream note:** The version-specific examples below describe LightCraft 0.4.0–0.7.1 and have
+> not been checked against a tested LightAdobado package.
+
+If a RAW photo looks flat in LightAdobado, compare it with the camera JPEG and note the app commit or
+package. Report the camera model, file type, and steps in the [LightAdobado issue tracker](https://github.com/smouj/LightAdobado/issues).
 
 ## Symptoms
 
@@ -15,10 +18,10 @@ Update to the latest LightAdobado, then select the photo and choose **Photo** > 
 
 ## Fix
 
-1. Check your version in **Help** > **About LightAdobado** (on macOS, **LightAdobado** > **About LightAdobado**). If it is older than 0.7.1, install the [latest release](https://github.com/smouj/LightAdobado/releases/latest). See [Install LightAdobado](../getting-started/install.md).
-2. Select the raw photo and choose **Photo** > **Reload from Disk**.
-3. If it still looks dull, adjust it by hand in the **Edit** panel. See [Edit a photo](../guides/edit-a-photo.md).
-4. If you think the starting look is wrong for your camera, report it with the original raw file. See [Get help with a problem](get-help.md).
+1. Note the LightAdobado version or source commit.
+2. If **Photo** > **Reload from Disk** is available, try it on a copy of the photo.
+3. Compare the result with the camera JPEG.
+4. If the difference remains, report it as described in [Get help with a problem](get-help.md).
 
 ## Why this happens
 
@@ -37,4 +40,4 @@ If a large raw looks soft right after you zoom in, wait a few seconds. LightAdob
 
 ## Still stuck?
 
-Ask in [Discord](https://github.com/smouj/Adobado_Kit) or open an issue in the [issue tracker](https://github.com/smouj/LightAdobado/issues).
+Open an issue in the [LightAdobado issue tracker](https://github.com/smouj/LightAdobado/issues).

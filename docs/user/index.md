@@ -1,12 +1,11 @@
 ---
 title: LightAdobado
-description: LightAdobado is a free, open-source photo library and raw developer, an alternative to Adobe Lightroom.
-verified: 0.7.1
+description: LightAdobado is a photo library and RAW editing project in the Adobado Kit. Its current app build is still being validated.
 ---
 
-LightAdobado is a photo library and raw developer that runs on your own computer. It is an open-source alternative to Adobe Lightroom, written in Rust, and part of the Craft App Suite from the Adobado Kit team.
+LightAdobado is a photo-library and RAW-development project in Adobado Kit.
 
-You import photos, sort them with ratings, flags and albums, and edit them without touching the originals. It reads raw files from Canon, Sony, Nikon, Fujifilm, Panasonic, Leica, Pentax and Olympus cameras, and DNG. There is no account, no cloud, no telemetry and no subscription. It runs on Windows, macOS and Linux, and in a web browser. LightAdobado is in alpha, so expect rough edges.
+The current Adobado build has not yet been validated for everyday use, and there is no tested installation package. The guides below are being checked against the renamed app; some upstream LightCraft instructions may not match the current interface.
 
 ## Start here
 
@@ -23,4 +22,4 @@ You import photos, sort them with ratings, flags and albums, and edit them witho
 
 ## Get help
 
-Ask in [Discord](https://github.com/smouj/Adobado_Kit) or open an issue in the [issue tracker](https://github.com/smouj/LightAdobado/issues). Say which system and camera you use, and your LightAdobado version (**Help** > **About LightAdobado**; on macOS, **LightAdobado** > **About LightAdobado**).
+Open an issue in the [LightAdobado issue tracker](https://github.com/smouj/LightAdobado/issues). Include your system, camera, and the commit or package you tested.

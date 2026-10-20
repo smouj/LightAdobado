@@ -2,7 +2,6 @@
 title: Is LightAdobado free, and does it need an account?
 description: LightAdobado is free and open source, needs no account or subscription, and keeps your library on your computer.
 order: 10
-verified: 0.7.1
 ---
 
 Yes, it is free. LightAdobado is open source under the MIT or Apache-2.0 licence, your choice. It needs no account, no cloud service and no subscription, and it sends no telemetry.

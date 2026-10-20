@@ -2,7 +2,6 @@
 title: Edit a photo
 description: Open a photo in the Edit panel, adjust Light, Color and Effects sliders, compare with the original, and undo or reset.
 order: 30
-verified: 0.7.1
 ---
 
 Double-click a photo in the grid, then press `E` to open the **Edit** panel. Drag a slider to change the photo. Your original file is never changed, because edits are stored in the library.

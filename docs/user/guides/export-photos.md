@@ -2,7 +2,6 @@
 title: Export photos
 description: Save edited photos as JPEG, PNG, TIFF and other files with the size, folder and file names you choose.
 order: 40
-verified: 0.7.1
 ---
 
 Select the photos, then choose **File** > **Export…**. Pick a format, a size and a folder, then click **OK**. Your originals are not changed.

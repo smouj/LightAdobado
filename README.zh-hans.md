@@ -1,14 +1,11 @@
 <p align="center">
-  <a href="https://getartcraft.com/">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="docs/brand/artcraft-logo-white.svg">
-      <img alt="ArtCraft" src="docs/brand/artcraft-logo.svg" width="200">
-    </picture>
+  <a href="https://smouj.github.io/Adobado_Kit/">
+    <img alt="Adobado Kit" src="docs/brand/adobado-logo.png" width="200">
   </a>
 </p>
 
 
-<h1 align="center">LightCraft</h1>
+<h1 align="center">LightAdobado</h1>
 
 <h3 align="center">Your photos. Your pixels. Your machine.</h3>
 
@@ -18,7 +15,7 @@
 </p>
 
 <p align="center">
-  <b>照片图库与 raw 显影；开源、非破坏性的照片图库与 raw 显影工具，用纯 Rust 构建。</b><br>
+  <b>在本机整理照片、显影 RAW 文件，并保留可随时调整的非破坏式编辑。</b><br>
   在 macOS、Windows 和 Linux 上原生运行，也可通过 WebAssembly 在浏览器中使用，并能由 AI 智能体经 MCP 端到端驱动。
 </p>
 
@@ -31,26 +28,25 @@
 </p>
 
 <p align="center">
-  <a href="https://discord.gg/artcraft"><img alt="Join the ArtCraft community on Discord" src="https://img.shields.io/badge/Join%20us%20on%20Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" height="40"></a>
+  <a href="https://github.com/smouj/LightAdobado"><img alt="查看 LightAdobado 项目状态" src="https://img.shields.io/badge/项目状态-查看仓库-6f9d3d?style=for-the-badge&logo=github&logoColor=white" height="40"></a>
 </p>
 
 <p align="center">
-  <a href="https://getartcraft.com/apps/lightcraft"><b>getartcraft.com 上的 LightCraft</b></a> ·
-  <a href="https://getartcraft.com/">ArtCraft</a> ·
-  <a href="https://getartcraft.com/apps">全部 Crafting Apps</a>
+  <a href="https://github.com/smouj/LightAdobado"><b>LightAdobado 项目</b></a> ·
+  <a href="https://smouj.github.io/Adobado_Kit/">Adobado Kit 工具集</a> ·
+  <a href="https://github.com/smouj/LightAdobado/issues">反馈问题</a>
 </p>
 
 <br>
 
 <p align="center">
-  <img src="docs/images/hero-tetons.jpg" alt="LightCraft 的编辑视图：放大视图中是安塞尔·亚当斯的《特顿山脉与蛇河》，右侧打开着 Light 与 Effects 面板，底部的胶片窗格中是四张展示照片" width="100%">
+  <img src="docs/images/hero-tetons.jpg" alt="LightAdobado 中的照片整理与显影工作区" width="100%">
   <br>
-  <sub><i>安塞尔·亚当斯，《特顿山脉与蛇河》（1942）。公有领域，美国国家档案馆。在 LightCraft 中显影。</i></sub>
+  <sub><i>安塞尔·亚当斯，《特顿山脉与蛇河》（1942）。公有领域，美国国家档案馆。在 LightAdobado 中显影。</i></sub>
 </p>
 
 > [!NOTE]
-> **ArtCraft 是一个由形形色色的创作者组成的社区。** 数字艺术、生成艺术、音乐、游戏 &mdash;
-> 只要你在创作，你就是我们中的一员。**[来 Discord 打个招呼吧](https://discord.gg/artcraft)。**
+> **你的照片库留在本机。** LightAdobado 的目录管理和显影流程围绕本地文件设计；编辑参数可继续调整，原始照片不会被覆盖。
 
 <p align="center">
   <a href="#edit-like-you-mean-it">编辑</a> ·
@@ -65,14 +61,14 @@
   <a href="#quick-start">快速开始</a> ·
   <a href="ROADMAP.md">路线图</a> ·
   <a href="#downloads">下载</a> ·
-  <a href="#the-crafting-apps">Crafting Apps</a>
+  <a href="#adobado-kit">Adobado Kit</a>
 </p>
 
 <br>
 
 ## Edit like you mean it
 
-LightCraft 是一个装在单个原生应用里的完整暗房。每一项调整都是**非破坏性**的，原始文件永远不会被改动。
+LightAdobado 是一个装在单个原生应用里的完整暗房。每一项调整都是**非破坏性**的，原始文件永远不会被改动。
 每个滑块都经过一条**场景参考、宽色域、32 位浮点的管线**渲染：高光像胶片一样柔和滚降，阴影被提亮却不产生光晕，
 色彩从拍摄到导出始终保持干净。
 
@@ -129,7 +125,7 @@ LightCraft 是一个装在单个原生应用里的完整暗房。每一项调整
 ## Before & after
 
 按住 <kbd>\\</kbd> 偷看原图，按 <kbd>Y</kbd> 并排对比，或按 <kbd>Shift</kbd>+<kbd>Y</kbd> 分屏查看。
-下面每一张都是 LightCraft 的真实截图，由智能体通过[控制通道](#built-for-agents)自动截取。
+下面每一张都是应用工作区的真实截图，由智能体通过[控制通道](#built-for-agents)自动截取。
 
 <table>
 <tr>
@@ -154,7 +150,7 @@ LightCraft 是一个装在单个原生应用里的完整暗房。每一项调整
 <p align="center">
   <img src="docs/images/masking.jpg" alt="蒙版面板中有一个线性天空蒙版和一个径向阳光光晕蒙版；径向渐变在湖景照片上以红色叠加层画在太阳周围" width="100%">
   <br>
-  <sub>叠加在线性「天空」蒙版之上的径向「阳光光晕」蒙版（色温 +40、曝光 +0.50）。<i>照片来自 LightCraft 程序生成的演示图库。</i></sub>
+  <sub>叠加在线性「天空」蒙版之上的径向「阳光光晕」蒙版（色温 +40、曝光 +0.50）。<i>照片来自应用程序生成的演示图库。</i></sub>
 </p>
 
 <br>
@@ -221,7 +217,7 @@ Landscape* 等等），每个都有 0 到 200 % 的**数量**滑块。你可以�
 
 ## Built for agents
 
-LightCraft 里的每一个菜单项、滑块、画笔笔触、裁剪手柄和按键都是一个**命令**，拥有稳定的 ID 和
+LightAdobado 里的每一个菜单项、滑块、画笔笔触、裁剪手柄和按键都是一个**命令**，拥有稳定的 ID 和
 JSON 参数。界面、键盘、CLI、JSON-lines 控制通道和一个 **MCP 服务器**全都通过同一个入口分发。
 智能体可以挑片、显影、给天空加蒙版并导出，而且能*看到*结果。
 
@@ -276,7 +272,7 @@ lightcraft --control 7980 ~/Pictures/trip
 - **纯 Rust，无 C。** 我们自己的 RAW 解码器（DNG、佳能 CR2/CR3、索尼 ARW、尼康 NEF、富士 RAF 含 X-Trans、
   松下 RW2／徕卡 RWL、宾得 PEF、奥林巴斯 ORF）、我们自己的色彩科学、我们自己的管线。JPEG、PNG、TIFF、WebP、
   PSD 合成图和 JPEG XL 现在就能打开；加 `--features heif` 还能打开 HEIC/HEIF 照片（HEVC 是构建时的选择，
-  与 PhotoCraft 中一致）。
+  与 PhotoAdobado 中一致）。
 - **场景参考与宽色域。** 内部使用线性 Rec.2020 浮点、Bradford 适应的白平衡、用色域映射代替裁剪，
   raw 走胶片式肩部，未改动过的 JPEG 则像素级直通。
 - **分辨率无关的编辑。** 半径和画笔大小都相对于图像，所以 400 px 的预览、你的 5K 显示器和 60 MP 的导出
@@ -297,10 +293,10 @@ lightcraft --control 7980 ~/Pictures/trip
 
 ## Feature status
 
-LightCraft 很年轻，而且进展很快。**我们如实所处的位置**（细节见[路线图](ROADMAP.md#where-we-stand)）：
+LightAdobado 的功能来自上游 LightCraft 代码库；以下差距说明来自继承的代码与路线图，**不代表已发布的 Adobado 二进制经过完整验证**。当前 Adobado Kit 状态和可下载构建以[项目仓库](https://github.com/smouj/LightAdobado)及其 Actions 为准：
 
 - **按功能数量算，我们达到了约 79%**（核心功能 98%），逐行记录在
-  [docs/parity.md](docs/parity.md)。
+  [docs/parity-checklist.md](docs/parity-checklist.md)。
 - **作为日常使用的工具，我们更接近 60–70%。** 在单台机器上处理 JPEG/DNG 以及大多数尼康／索尼／
   较老佳能的 raw 都很出色。
 - **最大的缺口：**
@@ -342,7 +338,7 @@ LightCraft 很年轻，而且进展很快。**我们如实所处的位置**（�
 ## Quick start
 
 ```sh
-git clone https://github.com/storytold/lightcraft && cd lightcraft
+git clone https://github.com/smouj/LightAdobado && cd LightAdobado
 cargo run --release -p lightcraft                       # 打开你的图库（~/Pictures/LightCraft Library；新图库会先带演示照片）
 cargo run --release -p lightcraft -- ~/Pictures/trip    # 导入你的照片（扫描文件夹，跳过重复项）
 cargo run --release -p lightcraft -- --memory           # 用完即弃的内存演示会话（不写入任何内容）
@@ -390,7 +386,7 @@ git clone https://github.com/storytold/craft-fonts ../craft-fonts
 CRAFT_FONTS_DIR=../craft-fonts cargo run --release -p lightcraft
 ```
 
-不指定它时，LightCraft 构建和运行的方式完全相同，只是中文和日文文字没有字形。字体从不提交到
+不指定它时，LightAdobado 构建和运行的方式完全相同，只是中文和日文文字没有字形。字体从不提交到
 本仓库；见 [craftrules `standards/fonts.md`](https://github.com/storytold/craftrules/blob/main/standards/fonts.md)。
 
 **界面语言：** **编辑 → 语言**（English、简体中文、繁體中文（台灣）、日本語、Português (Brasil)、Español、Deutsch、Русский、Français）或 **设置 → 一般 →
@@ -403,8 +399,8 @@ CRAFT_FONTS_DIR=../craft-fonts cargo run --release -p lightcraft
 文件夹** 会在文件管理器中显示它）。每次启动会把
 上一个日志移到 `lightcraft.1.log`，再上一个移到 `lightcraft.2.log`，这样崩溃那次的日志能在下次启动后
 保留下来；文件到 16 MiB 停止增长，`--version` 和 `--help` 不写日志，带
-`LIGHTCRAFT_NO_PREFS` 运行时只写到标准错误。默认情况下 LightCraft 自己的 crate 记到 `info`，其他都记到
-`warn`。`LIGHTCRAFT_LOG=info` 或 `debug` 的行为和以前一样（LightCraft 自己的 crate 用该级别，其余只记警告和
+`LIGHTCRAFT_NO_PREFS` 运行时只写到标准错误。默认情况下 LightAdobado 自己的 crate 记到 `info`，其他都记到
+`warn`。`LIGHTCRAFT_LOG=info` 或 `debug` 的行为和以前一样（LightAdobado 自己的 crate 用该级别，其余只记警告和
 错误；其他值：只记警告和错误），并且优先于 `RUST_LOG`，后者会把默认值替换为
 env_logger 风格的指令，例如 `RUST_LOG=debug` 或 `RUST_LOG=warn,lightcraft_pipeline=trace`（以
 `*` 结尾的指令覆盖所有以它开头的目标，如 `lightcraft*=debug`）。panic 也会记录在那里，
@@ -417,17 +413,17 @@ env_logger 风格的指令，例如 `RUST_LOG=debug` 或 `RUST_LOG=warn,lightcra
 文字有字形）：
 
 ```sh
-nix run github:storytold/lightcraft                    # 桌面应用
-nix build github:storytold/lightcraft                  # → ./result/bin/{lightcraft,lightcraft-cli}
-nix develop github:storytold/lightcraft                # rust 工具链 + 原生依赖 + 字体
+nix run github:smouj/LightAdobado                      # 桌面应用
+nix build github:smouj/LightAdobado                    # → ./result/bin/{lightcraft,lightcraft-cli}
+nix develop github:smouj/LightAdobado                  # Rust 工具链 + 原生依赖 + 字体
 ```
 
 在 flake 配置中（NixOS、home-manager、nix-darwin）：
 
 ```nix
 # flake.nix
-inputs.lightcraft.url = "github:storytold/lightcraft";
-# 可选：使用你自己的 nixpkgs，而不是 LightCraft 锁定的那个
+inputs.lightcraft.url = "github:smouj/LightAdobado";
+# 可选：使用你自己的 nixpkgs，而不是此仓库在 flake.lock 中固定的版本
 # inputs.lightcraft.inputs.nixpkgs.follows = "nixpkgs";
 
 # 然后在 NixOS 或 home-manager 模块中（`inputs` 在作用域内）：
@@ -465,125 +461,79 @@ egui 前端是一个可替换的 crate；它下面没有任何东西知道 UI �
   `unsafe`，对任何来自输入的数据都做受检索引，并且每个崩溃修复都带一个回归测试。细节见
   [AGENTS.md](AGENTS.md#never-crash-outranks-feature-work)。
 
-有问题、想法，或者想先讨论一个 bug？来 [Discord](https://discord.gg/artcraft)。
+遇到问题时，请到 [GitHub Issues](https://github.com/smouj/LightAdobado/issues) 提交系统信息、应用版本和复现步骤。
 
 <br>
 
 ## Downloads
 
-**第一次用 LightCraft？** 从 [getartcraft.com 的 LightCraft 页面](https://getartcraft.com/apps/lightcraft)下载。那是最简单的安装方式。
+**当前没有经过发布验证的 LightAdobado 安装包。** 本仓库中的源码可用于开发；安装包会在构建、签名、图标与启动流程验证完成后发布。请勿把上游 LightCraft 的旧安装文件当作 LightAdobado 发行版。
 
-**想要特定的构建或格式？** 在 GitHub 上，[最新发布](https://github.com/storytold/lightcraft/releases/latest)包含下面列出的所有构建，[全部发布](https://github.com/storytold/lightcraft/releases)则有更早的版本及其说明。文件名中的 `<ver>` 是版本号，`SHA256SUMS.txt` 列出了每个文件的校验和。
-
-### Windows
-
-| 构建 | 安装程序 | 便携版 |
-|---|---|---|
-| x64（64 位 Intel/AMD） | `lightcraft-<ver>-windows-x64.msi` | `lightcraft-<ver>-windows-x64-portable.zip` |
-| arm64（骁龙及其他 ARM PC） | `lightcraft-<ver>-windows-arm64.msi` | `lightcraft-<ver>-windows-arm64-portable.zip` |
-| x86（32 位） | `lightcraft-<ver>-windows-x86.msi` | `lightcraft-<ver>-windows-x86-portable.zip` |
-
-安装程序和可执行文件都有代码签名。安装程序会询问安装位置（默认
-`C:\Program Files\LightCraft`；升级会留在你选择的文件夹），结束时有一页确认 LightCraft 已安装，
-并可选择启动它。无人值守安装：`msiexec /i lightcraft-<ver>-windows-x64.msi /qn INSTALLFOLDER="D:\Apps\LightCraft\"`。
-
-### macOS
-
-| 构建 | 文件 | 说明 |
-|---|---|---|
-| 应用，通用（Apple 芯片 + Intel） | `lightcraft-<ver>-macos-universal.dmg` | 已签名并公证 |
-| 命令行工具，通用 | `lightcraft-cli-<ver>-macos-universal.zip` | 已签名并公证 |
-
-### Linux
-
-| 格式 | x86_64 | aarch64 (ARM64) | 说明 |
-|---|---|---|---|
-| AppImage | `lightcraft-<ver>-linux-x86_64.AppImage` | `lightcraft-<ver>-linux-aarch64.AppImage` | 随处可运行；用 [AppImageUpdate](https://github.com/AppImageCommunity/AppImageUpdate)（`.zsync` 文件）自我更新 |
-| Flatpak | `lightcraft-<ver>-linux-x86_64.flatpak` | `lightcraft-<ver>-linux-aarch64.flatpak` | 沙箱化；`flatpak install --user <file>` |
-| Debian/Ubuntu | `lightcraft-<ver>-linux-x86_64.deb` | `lightcraft-<ver>-linux-aarch64.deb` | |
-| Fedora/RHEL/openSUSE | `lightcraft-<ver>-linux-x86_64.rpm` | `lightcraft-<ver>-linux-aarch64.rpm` | |
-| 压缩包 | `lightcraft-<ver>-linux-x86_64.tar.gz` | `lightcraft-<ver>-linux-aarch64.tar.gz` | 解压到任意位置 |
-
-### FreeBSD
-
-| 构建 | 文件 |
-|---|---|
-| x86_64 | `lightcraft-<ver>-freebsd-x86_64.tar.gz` |
-
-### 网页版（WebAssembly）
-
-| 构建 | 文件 | 说明 |
-|---|---|---|
-| 静态站点 | `lightcraft-web-<ver>.zip` | 在现代浏览器中运行；托管到任意静态服务器 |
+查看[源代码](https://github.com/smouj/LightAdobado)、[构建说明](#quick-start)和[问题跟踪](https://github.com/smouj/LightAdobado/issues)。
 
 <br>
 
-## The Crafting Apps
+## Adobado Kit
 
-LightCraft 是 **Crafting Apps** 之一：来自 [ArtCraft](https://getartcraft.com/) 团队的免费开源创作工具，
-每一个都用 Rust 从零编写，每一个都能独立使用。
+Adobado Kit 将面向不同工作流程的桌面工具放在一起。每个应用都有独立仓库、下载和状态说明；此列表中的代码和功能成熟度各不相同。
 
-| | 应用 | 用途 | 代码 | 了解更多 |
-|:-:|---|---|---|---|
-| <img src="https://raw.githubusercontent.com/storytold/photocraft/main/assets/app-icon/hicolor/64x64/apps/ai.storyteller.photocraft.png" alt="" width="32" height="32"> | **PhotoCraft** | 图像编辑：图层、蒙版、文字和真正的 PSD 文件 | [GitHub](https://github.com/storytold/photocraft) | [网站](https://getartcraft.com/apps/photocraft) |
-| <img src="https://raw.githubusercontent.com/storytold/vectorcraft/main/assets/app-icon/hicolor/64x64/apps/ai.storyteller.vectorcraft.png" alt="" width="32" height="32"> | **VectorCraft** | 矢量插画 | [GitHub](https://github.com/storytold/vectorcraft) | [网站](https://getartcraft.com/apps/vectorcraft) |
-| <img src="https://raw.githubusercontent.com/storytold/filmcraft/main/assets/app-icon/hicolor/64x64/apps/ai.storyteller.filmcraft.png" alt="" width="32" height="32"> | **FilmCraft** | 视频剪辑、调色与声音 | [GitHub](https://github.com/storytold/filmcraft) | [网站](https://getartcraft.com/apps/filmcraft) |
-| <img src="https://raw.githubusercontent.com/storytold/lightcraft/main/assets/app-icon/hicolor/64x64/apps/ai.storyteller.lightcraft.png" alt="" width="32" height="32"> | **LightCraft** | **照片图库与 raw 显影 · 你在这里** | [GitHub](https://github.com/storytold/lightcraft) | [网站](https://getartcraft.com/apps/lightcraft) |
-| <img src="https://raw.githubusercontent.com/storytold/pdfcraft/main/assets/app-icon/hicolor/64x64/apps/ai.storyteller.pdfcraft.png" alt="" width="32" height="32"> | **PdfCraft** | 阅读、整理和保护 PDF | [GitHub](https://github.com/storytold/pdfcraft) | [网站](https://getartcraft.com/apps/pdfcraft) |
-| <img src="https://raw.githubusercontent.com/storytold/effectcraft/main/assets/app-icon/hicolor/64x64/apps/ai.storyteller.effectcraft.png" alt="" width="32" height="32"> | **EffectCraft** | 动态图形与视觉特效 | [GitHub](https://github.com/storytold/effectcraft) | [网站](https://getartcraft.com/apps/effectcraft) |
-| <img src="https://raw.githubusercontent.com/storytold/designcraft/main/assets/app-icon/hicolor/64x64/apps/ai.storyteller.designcraft.png" alt="" width="32" height="32"> | **DesignCraft** | 页面排版与出版 | [GitHub](https://github.com/storytold/designcraft) | [网站](https://getartcraft.com/apps/designcraft) |
+| | 应用 | 用途 | 项目 |
+|:-:|---|---|---|
+| <img src="https://raw.githubusercontent.com/smouj/PhotoAdobado/main/assets/adobado/icon.png" alt="" width="32" height="32"> | **PhotoAdobado** | 编辑图像、图层和蒙版 | [项目与下载](https://github.com/smouj/PhotoAdobado) |
+| <img src="https://raw.githubusercontent.com/smouj/ArtAdobado/main/assets/adobado/icon.png" alt="" width="32" height="32"> | **ArtAdobado** | 创建和编辑矢量图形 | [项目与下载](https://github.com/smouj/ArtAdobado) |
+| <img src="https://raw.githubusercontent.com/smouj/FilmAdobado/main/assets/adobado/icon.png" alt="" width="32" height="32"> | **FilmAdobado** | 剪辑视频并调整色彩 | [项目与下载](https://github.com/smouj/FilmAdobado) |
+| <img src="assets/adobado/icon.png" alt="" width="32" height="32"> | **LightAdobado** | **整理照片与 RAW 显影 · 当前应用** | [项目与下载](https://github.com/smouj/LightAdobado) |
+| <img src="https://raw.githubusercontent.com/smouj/PdfAdobado/main/assets/adobado/icon.png" alt="" width="32" height="32"> | **PdfAdobado** | 阅读、整理和编辑 PDF | [项目与下载](https://github.com/smouj/PdfAdobado) |
+| <img src="https://raw.githubusercontent.com/smouj/EffectAdobado/main/assets/adobado/icon.png" alt="" width="32" height="32"> | **EffectAdobado** | 制作动态影像与视觉效果 | [项目与下载](https://github.com/smouj/EffectAdobado) |
+| <img src="https://raw.githubusercontent.com/smouj/DesignAdobado/main/assets/adobado/icon.png" alt="" width="32" height="32"> | **DesignAdobado** | 排版并制作印刷或屏幕版面 | [项目与下载](https://github.com/smouj/DesignAdobado) |
+| <img src="https://raw.githubusercontent.com/smouj/SoundAdobado/main/assets/adobado/icon.png" alt="" width="32" height="32"> | **SoundAdobado** | 编辑和混音音频 | [项目与下载](https://github.com/smouj/SoundAdobado) |
 
-以及 [**ArtCraft**](https://getartcraft.com/) 本身，我们为想要真正掌控力的创作者打造的 AI 图像与视频工作室。
+更多工具、安装包与项目状态见 [Adobado Kit](https://smouj.github.io/Adobado_Kit/)。
 
 <br>
 
 <p align="center">
-  <a href="https://discord.gg/artcraft"><img alt="Join the ArtCraft community on Discord" src="https://img.shields.io/badge/Join%20us%20on%20Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" height="40"></a>
+  <a href="https://github.com/smouj/LightAdobado/issues"><img alt="LightAdobado 问题反馈" src="https://img.shields.io/badge/问题反馈-GitHub%20Issues-536471?style=for-the-badge&logo=github&logoColor=white" height="40"></a>
 </p>
 
-<h3 align="center">Come make things with us</h3>
+<h3 align="center">获取帮助或反馈问题</h3>
 
 <p align="center">
-  我们的 Discord 是各种创作者聚集的地方：画画的人、拍照的人、做动画的人、剪片子的人、
-  排版的人，还有仍在摸索自己喜欢做什么的人。分享你在做的东西，
-  寻求帮助，告诉我们哪里坏了，或者告诉我们你希望这些工具能做什么。
-  无论你用什么媒介，无论你做了多久，这里都欢迎你。
+  如果安装或使用时遇到问题，请在 GitHub Issues 中说明系统、应用版本和复现步骤。
+  也可以浏览 Adobado Kit，查看其他工具及其当前发布状态。
 </p>
 
 <p align="center">
-  <a href="https://discord.gg/artcraft"><b>discord.gg/artcraft</b></a> ·
-  <a href="https://getartcraft.com/">getartcraft.com</a> ·
-  <a href="https://getartcraft.com/apps">The Crafting Apps</a> ·
-  <a href="https://getartcraft.com/apps/lightcraft">LightCraft</a>
+  <a href="https://github.com/smouj/LightAdobado/issues"><b>报告问题</b></a> ·
+  <a href="https://github.com/smouj/LightAdobado/releases">下载与版本</a> ·
+  <a href="https://smouj.github.io/Adobado_Kit/">Adobado Kit</a>
 </p>
 
 <br>
 
 ## License and credits
 
-LightCraft 采用 [MIT](LICENSE-MIT) 或 [Apache-2.0](LICENSE-APACHE) 双许可，任你选择。
-Copyright (c) 2026 ArtCraft Team and the LightCraft contributors. 必需的声明见 [NOTICE](NOTICE)。
+本仓库代码采用 [MIT](LICENSE-MIT) 或 [Apache-2.0](LICENSE-APACHE) 双许可。上游代码的版权与许可声明均保留在 [NOTICE](NOTICE)。
 
 随附的字体、图标、图像和其他资源保留各自的开放许可；每一项都在
 [assets/ATTRIBUTION.md](assets/ATTRIBUTION.md) 中列出了作者、来源和许可。
 
 展示照片是经 Wikimedia Commons 使用的公有领域作品：安塞尔·亚当斯，*《特顿山脉与蛇河》*
 （1942，美国国家档案馆）；多萝西娅·兰格，*《移民母亲》*（1936，美国国会图书馆）；比尔·安德斯／NASA，
-*《地出》*（1968）；NASA，*《蓝色弹珠》*（1972）。演示图库由 LightCraft 程序生成。界面字体：
+*《地出》*（1968）；NASA，*《蓝色弹珠》*（1972）。演示图库由应用程序生成。界面字体：
 Inter（SIL OFL 1.1）。用 [craft-fonts](https://github.com/storytold/craft-fonts) 构建的版本（所有正式发布版）
 还会内嵌它的中文和日文字体（Noto Sans CJK SC、BIZ UDPGothic、BIZ UDMincho、Shippori Mincho；SIL OFL 1.1），列在其
 [ATTRIBUTION.md](https://github.com/storytold/craft-fonts/blob/main/ATTRIBUTION.md) 中。所有图标均为原创。
 
-[`docs/brand/`](docs/brand/) 中的 ArtCraft 名称、字标和标志是
-ArtCraft 团队的商标，不在本许可范围内。它们只能在未修改的情况下，作为
-本仓库和 LightCraft 的一部分，按 [`docs/brand/LICENSE-brand.txt`](docs/brand/LICENSE-brand.txt) 使用。
-分支和修改版本必须移除它们。
+上游项目的版权与许可声明保留在 [`NOTICE`](NOTICE) 和 [`docs/ADOBADO.md`](docs/ADOBADO.md) 中。
+此分支不分发 ArtCraft 的名称、字标或标志；Adobado Kit 的品牌素材及来源见
+[`assets/ATTRIBUTION.md`](assets/ATTRIBUTION.md)。
 
 <p align="center">
-  <a href="https://getartcraft.com/"><img alt="ArtCraft" src="docs/brand/artcraft-mark.svg" width="28"></a><br>
-  <sub>由 <a href="https://getartcraft.com/">ArtCraft</a> 团队和社区制作。</sub>
+  <a href="https://smouj.github.io/Adobado_Kit/"><img alt="Adobado Kit" src="docs/brand/adobado-logo.png" width="28"></a><br>
+  <sub>Adobado Kit 由 <a href="https://github.com/smouj">@smouj</a> 维护。</sub>
 </p>
 
 ## Star history
 
-[![Star History Chart](https://api.star-history.com/svg?repos=storytold/lightcraft&type=Date&legend=top-left)](https://www.star-history.com/?repos=storytold%2Flightcraft&type=date&legend=top-left)
+[![Star History Chart](https://api.star-history.com/svg?repos=smouj/LightAdobado&type=Date&legend=top-left)](https://www.star-history.com/?repos=smouj%2FLightAdobado&type=date&legend=top-left)

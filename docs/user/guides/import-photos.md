@@ -2,7 +2,6 @@
 title: Import photos
 description: Bring photos from a folder or card into your LightAdobado library, in place or as copies.
 order: 10
-verified: 0.7.1
 ---
 
 Use **File** > **Import Photos…** to pick files, or **File** > **Import from Folder…** to scan a whole folder. Both open the **Import Photos** window, where you choose what to bring in and how.

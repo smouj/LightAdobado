@@ -2,7 +2,6 @@
 title: Which cameras and file types does LightAdobado open?
 description: The raw and image formats LightAdobado reads, what happens with raws it cannot decode yet, and how to open Lightroom catalogs.
 order: 20
-verified: 0.7.1
 ---
 
 LightAdobado reads raw files from DNG, Canon CR2 and CR3, Sony ARW, Nikon NEF, Fujifilm RAF (including X-Trans), Panasonic RW2, Leica RWL, Pentax PEF and Olympus ORF cameras. It also opens JPEG, PNG, TIFF, WebP, PSD composites and JPEG XL.
